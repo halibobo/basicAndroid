@@ -9,6 +9,7 @@ import me.dahei.basis.Test
 import android.content.pm.PackageManager
 import android.support.v4.app.ActivityCompat
 import me.dahei.aidltest.AidlTester
+import me.dahei.multithread.produceConsume.QueueTest
 
 
 class MainActivity : AppCompatActivity() {
@@ -34,7 +35,8 @@ class MainActivity : AppCompatActivity() {
         viewManager = LinearLayoutManager(this)
         val data: List<Test> = arrayOf(
                 Tester(),
-                AidlTester()).toList()
+                AidlTester(),
+                QueueTest()).toList()
         val viewAdapter = TesterAdapter(data)
         recyclerView.apply {
             layoutManager = viewManager
