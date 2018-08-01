@@ -1,6 +1,5 @@
 package me.dahei.basicandroid
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
@@ -10,13 +9,13 @@ import me.dahei.basis.Test
 import android.content.pm.PackageManager
 import android.support.v4.app.ActivityCompat
 import me.dahei.aidltest.AidlTester
-import me.dahei.aidltest.MyService
 
 
 class MainActivity : AppCompatActivity() {
 
     private val REQUEST_EXTERNAL_STORAGE = 1
-    private val PERMISSIONS_STORAGE = arrayOf("android.permission.READ_EXTERNAL_STORAGE", "android.permission.WRITE_EXTERNAL_STORAGE")
+    private val PERMISSIONS_STORAGE = arrayOf("android.permission.READ_EXTERNAL_STORAGE",
+            "android.permission.WRITE_EXTERNAL_STORAGE")
 
     private lateinit var viewManager: RecyclerView.LayoutManager
 
@@ -29,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         init()
         permission()
-        startService(Intent(this, MyService::class.java))
     }
 
     private fun init() {
@@ -37,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         val data: List<Test> = arrayOf(
                 Tester(),
                 AidlTester()).toList()
-        val viewAdapter = TesterAdapter(this,data)
+        val viewAdapter = TesterAdapter(data)
         recyclerView.apply {
             layoutManager = viewManager
             adapter = viewAdapter

@@ -15,11 +15,11 @@ import me.dahei.basis.Test
  * 2018年07月31日上午10:20
  */
 
-class TesterAdapter(private val context : Context, private val myDataSet: List<Test>) : RecyclerView.Adapter<TesterAdapter.ViewHolder>() {
+class TesterAdapter( private val myDataSet: List<Test>) : RecyclerView.Adapter<TesterAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup,
                                     viewType: Int): ViewHolder {
         // create a new view
-        val view = LayoutInflater.from(context)
+        val view = LayoutInflater.from(parent.context)
                 .inflate(R.layout.tester_list_item, parent, false)
         return ViewHolder(view)
     }
@@ -35,7 +35,6 @@ class TesterAdapter(private val context : Context, private val myDataSet: List<T
 
     override fun getItemCount() = myDataSet.size
 
-    private val bundle = Bundle()
     private fun exeFun( test: Test) {
         Log.d("exeFun", "exeFun")
         test.doTest()

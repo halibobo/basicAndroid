@@ -13,6 +13,7 @@ public class AidlTester implements Test {
 
     @Override
     public void doTest() {
+        AppContext.getInstance().startService(new Intent(AppContext.getInstance(), MyService.class));
         Intent intent = new Intent(AppContext.getInstance(), TesterActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         AppContext.getInstance().startActivity(intent);
