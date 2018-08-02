@@ -17,7 +17,6 @@ public class TouchActivity extends AppCompatActivity {
     private final String TAG = "TouchActivity";
 
     private int index = 1;
-    private int SIZE = 3;
 
     LogLinearLayout fatherLayout;
     LogLinearLayout child1;
@@ -61,13 +60,14 @@ public class TouchActivity extends AppCompatActivity {
         child1.setName("layout_child1");
         child2.setName("layout_child2");
         Button button = findViewById(R.id.button);
-        TextView textView = findViewById(R.id.text);
+        final TextView textView = findViewById(R.id.text);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "button click");
                 index = (index + 1) % booleans.length;
                 test(booleans[index]);
+                textView.setText("test " + index);
             }
         });
     }

@@ -21,6 +21,11 @@
 
     </me.dahei.touchtester.LogLinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#444444"
+        android:layout_height="2dp" />
+
     <me.dahei.touchtester.LogLinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
