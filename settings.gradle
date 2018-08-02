@@ -1,1 +1,1 @@
-include ':app', ':aidltest', ':basis', ':multithread'
+include ':app', ':aidltest', ':basis', ':multithread', ':touchtester'

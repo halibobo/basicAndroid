@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/basis" />
             <option value="$PROJECT_DIR$/multithread" />
+            <option value="$PROJECT_DIR$/touchtester" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

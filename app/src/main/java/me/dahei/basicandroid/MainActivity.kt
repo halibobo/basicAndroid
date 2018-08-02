@@ -10,6 +10,7 @@ import android.content.pm.PackageManager
 import android.support.v4.app.ActivityCompat
 import me.dahei.aidltest.AidlTester
 import me.dahei.multithread.produceConsume.QueueTest
+import me.dahei.touchtester.TouchTester
 
 
 class MainActivity : AppCompatActivity() {
@@ -36,7 +37,8 @@ class MainActivity : AppCompatActivity() {
         val data: List<Test> = arrayOf(
                 Tester(),
                 AidlTester(),
-                QueueTest()).toList()
+                QueueTest(),
+                TouchTester()).toList()
         val viewAdapter = TesterAdapter(data)
         recyclerView.apply {
             layoutManager = viewManager

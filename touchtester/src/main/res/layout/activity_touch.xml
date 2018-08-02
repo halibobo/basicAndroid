@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<me.dahei.touchtester.LogLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_father"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <me.dahei.touchtester.LogLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:id="@+id/layout_child1"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/button"
+            android:text="button"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+
+    </me.dahei.touchtester.LogLinearLayout>
+
+    <me.dahei.touchtester.LogLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:id="@+id/layout_child2"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/text"
+            android:text="test"
+            android:padding="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </me.dahei.touchtester.LogLinearLayout>
+
+
+</me.dahei.touchtester.LogLinearLayout>
