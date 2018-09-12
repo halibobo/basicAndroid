@@ -3,6 +3,7 @@ package me.dahei.basicandroid;
 import android.app.Application;
 
 import me.dahei.basis.AppContext;
+import me.dahei.hook.HookUtil;
 
 /**
  * created by yubosu
@@ -15,5 +16,13 @@ public class MainApplication extends Application {
     public void onCreate() {
         super.onCreate();
         AppContext.init(getApplicationContext());
+        HookUtil hookUtil = new HookUtil(this);
+//        hookUtil.hookAms();
+        try {
+            hookUtil.attachContext();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }

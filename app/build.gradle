@@ -41,4 +41,5 @@ dependencies {
     implementation project(':aidltest')
     compile project(path: ':multithread')
     compile project(path: ':touchtester')
+    compile project(path: ':hook')
 }
