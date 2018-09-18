@@ -9,6 +9,8 @@ import me.dahei.basis.Test
 import android.content.pm.PackageManager
 import android.support.v4.app.ActivityCompat
 import me.dahei.aidltest.AidlTester
+import me.dahei.multithread.concurent.CompletableFutureParallel
+import me.dahei.multithread.concurent.CountDownTask
 import me.dahei.multithread.produceConsume.QueueTest
 import me.dahei.touchtester.TouchTester
 
@@ -38,6 +40,8 @@ class MainActivity : AppCompatActivity() {
                 Tester(),
                 AidlTester(),
                 QueueTest(),
+                CountDownTask(),
+                CompletableFutureParallel(),
                 TouchTester()).toList()
         val viewAdapter = TesterAdapter(data)
         recyclerView.apply {
