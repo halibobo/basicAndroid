@@ -1,4 +1,4 @@
-package me.dahei.multithread.reentrantlock;
+package me.dahei.multithread.lock;
 
 import java.util.concurrent.locks.ReentrantLock;
 

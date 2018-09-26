@@ -12,6 +12,8 @@ import me.dahei.aidltest.AidlTester
 import me.dahei.multithread.concurent.CompletableFutureParallel
 import me.dahei.multithread.concurent.CountDownTask
 import me.dahei.multithread.produceConsume.QueueTest
+import me.dahei.multithread.lock.ReentrantLockTest
+import me.dahei.multithread.lock.SynObj
 import me.dahei.touchtester.TouchTester
 
 
@@ -42,6 +44,8 @@ class MainActivity : AppCompatActivity() {
                 QueueTest(),
                 CountDownTask(),
                 CompletableFutureParallel(),
+                ReentrantLockTest("reentrant test"),
+                SynObj(),
                 TouchTester()).toList()
         val viewAdapter = TesterAdapter(data)
         recyclerView.apply {

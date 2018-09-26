@@ -1,4 +1,4 @@
-package me.dahei.multithread.reentrantlock;
+package me.dahei.multithread.lock;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.ReentrantLock;
@@ -27,7 +27,7 @@ public class ReentrantLockTest extends Thread  implements Test {
     }
 
     private void syncAdd() {
-        for (int j = 0; j < 500000; j++) {
+        for (int j = 0; j < 10000; j++) {
             try {
                 System.out.println(this.getName() + " " + integer.incrementAndGet());
 
@@ -38,7 +38,7 @@ public class ReentrantLockTest extends Thread  implements Test {
     }
 
     private void reentrantAdd() {
-        for (int j = 0; j < 500000; j++) {
+        for (int j = 0; j < 10000; j++) {
             lock.lock();
             try {
                 System.out.println(this.getName() + " " + i);
