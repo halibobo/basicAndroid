@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/annotation" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/basis" />
+            <option value="$PROJECT_DIR$/compute" />
             <option value="$PROJECT_DIR$/hook" />
             <option value="$PROJECT_DIR$/multithread" />
             <option value="$PROJECT_DIR$/touchtester" />
