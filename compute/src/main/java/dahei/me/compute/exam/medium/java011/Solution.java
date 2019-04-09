@@ -54,10 +54,10 @@ public class Solution {
 
     public static void main(String[] args) {
         long start = System.currentTimeMillis();
-        numsSameConsecDiff(9, 3);
+        numsSameConsecDiff(9, 4);
         long end = System.currentTimeMillis();
         System.out.println("数组耗时：" + (end - start));
-        numsSameConsecDiff2(9, 3);
+        numsSameConsecDiff2(9, 4);
         long end2 = System.currentTimeMillis();
         System.out.println("字符串耗时：" + (end2 - end));
     }

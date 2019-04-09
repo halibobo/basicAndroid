@@ -3,8 +3,9 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="distributionType" value="LOCAL" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../tool/gradle/gradle-4.10.1-all" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
@@ -15,6 +16,7 @@
             <option value="$PROJECT_DIR$/compute" />
             <option value="$PROJECT_DIR$/hook" />
             <option value="$PROJECT_DIR$/multithread" />
+            <option value="$PROJECT_DIR$/navigation" />
             <option value="$PROJECT_DIR$/touchtester" />
           </set>
         </option>

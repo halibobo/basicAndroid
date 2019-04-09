@@ -1,6 +1,5 @@
 package dahei.me.compute.exam.medium.java002;
 
-import java.util.Arrays;
 
 /**
  * created by yubosu
